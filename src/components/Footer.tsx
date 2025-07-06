@@ -1,6 +1,10 @@
+
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -13,13 +17,13 @@ const Footer = () => {
               className="h-24 w-auto bg-white p-2 rounded-lg"
             />
             <p className="text-gray-300">
-              Odontología estética y restauradora con la más alta calidad y tecnología avanzada.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Información de contacto */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-dental-400">Contacto</h3>
+            <h3 className="text-lg font-semibold text-dental-400">{t('footer.contact')}</h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-dental-400 mt-0.5 flex-shrink-0" />
@@ -42,13 +46,13 @@ const Footer = () => {
 
           {/* Horarios */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-dental-400">Horarios de Atención</h3>
+            <h3 className="text-lg font-semibold text-dental-400">{t('footer.schedule')}</h3>
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-dental-400 flex-shrink-0" />
                 <div className="text-gray-300 text-sm">
-                  <p>Lunes - Viernes: 9:00 AM - 7:00 PM (previa cita)</p>
-                  <p>Sábados y Domingos: Cerrado</p>
+                  <p>{t('footer.scheduleText')}</p>
+                  <p>{t('footer.weekends')}</p>
                 </div>
               </div>
             </div>
@@ -56,7 +60,7 @@ const Footer = () => {
 
           {/* Redes Sociales */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-dental-400">Síguenos</h3>
+            <h3 className="text-lg font-semibold text-dental-400">{t('footer.followUs')}</h3>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/dra.lizcheng"
@@ -76,14 +80,14 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-300 text-sm">
-              Mantente conectado para tips de salud dental y noticias.
+              {t('footer.socialText')}
             </p>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2025 Dra. Liz Cheng - Odontología Estética y Restauradora. Todos los derechos reservados.
+            {t('footer.copyright')}
           </p>
         </div>
       </div>

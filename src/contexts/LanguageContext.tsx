@@ -42,6 +42,16 @@ const translations = {
     'home.services.preventive': 'Tratamientos Preventivos',
     'home.services.preventiveDesc': 'Limpiezas, sellantes, fluorización',
     'home.services.learnMore': 'Saber más →',
+    
+    // Footer
+    'footer.description': 'Odontología estética y restauradora con la más alta calidad y tecnología avanzada.',
+    'footer.contact': 'Contacto',
+    'footer.schedule': 'Horarios de Atención',
+    'footer.scheduleText': 'Lunes - Viernes: 9:00 AM - 7:00 PM (previa cita)',
+    'footer.weekends': 'Sábados y Domingos: Cerrado',
+    'footer.followUs': 'Síguenos',
+    'footer.socialText': 'Mantente conectado para tips de salud dental y noticias.',
+    'footer.copyright': '© 2025 Dra. Liz Cheng - Odontología Estética y Restauradora. Todos los derechos reservados.',
   },
   en: {
     // Navigation
@@ -73,6 +83,16 @@ const translations = {
     'home.services.preventive': 'Preventive Treatments',
     'home.services.preventiveDesc': 'Cleanings, sealants, fluoride treatments',
     'home.services.learnMore': 'Learn more →',
+    
+    // Footer
+    'footer.description': 'Aesthetic and restorative dentistry with the highest quality and advanced technology.',
+    'footer.contact': 'Contact',
+    'footer.schedule': 'Office Hours',
+    'footer.scheduleText': 'Monday - Friday: 9:00 AM - 7:00 PM (by appointment)',
+    'footer.weekends': 'Saturdays and Sundays: Closed',
+    'footer.followUs': 'Follow Us',
+    'footer.socialText': 'Stay connected for dental health tips and news.',
+    'footer.copyright': '© 2025 Dr. Liz Cheng - Aesthetic and Restorative Dentistry. All rights reserved.',
   }
 };
 
