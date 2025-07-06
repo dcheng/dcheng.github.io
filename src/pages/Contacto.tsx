@@ -63,7 +63,7 @@ const Contacto = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-                    <p className="text-gray-600">info@dralencheng.com</p>
+                    <p className="text-gray-600">lizbeth.cheng@gmail.com</p>
                   </div>
                 </div>
 
@@ -74,8 +74,8 @@ const Contacto = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Horarios de Atención</h3>
                     <div className="text-gray-600 space-y-1">
-                      <p>Lunes - Sábados: 8:00 AM - 6:00 PM</p>
-                      <p>Domingos: Cerrado</p>
+                      <p>Lunes - Viernes: 9:00 AM - 7:00 PM</p>
+                      <p>Sábados y Domingos: Cerrado</p>
                     </div>
                   </div>
                 </div>
