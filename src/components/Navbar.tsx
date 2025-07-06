@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/images/7763065a-89ed-4786-a8c7-998e28bbf032.png" 
+                src="/images/7763065a-89ed-4786-a8c7-998e28bbf032.webp" 
                 alt="Dra. Liz Cheng" 
                 className="h-20 w-auto"
               />
