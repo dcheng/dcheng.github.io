@@ -27,7 +27,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/7763065a-89ed-4786-a8c7-998e28bbf032.png" 
                 alt="Dra. Liz Cheng" 
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
           </div>
