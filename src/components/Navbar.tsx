@@ -49,7 +49,7 @@ const Navbar = () => {
             {/* Social Media Links */}
             <div className="flex items-center space-x-3">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/dra.lizcheng"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-dental-600 transition-colors"
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/dra.lizcheng/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-dental-600 transition-colors"

@@ -61,7 +61,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-dental-400">Síguenos</h3>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/dra.lizcheng"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-dental-600 hover:bg-dental-700 p-3 rounded-full transition-colors"
@@ -69,7 +69,7 @@ const Footer = () => {
                 <Facebook className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/dra.lizcheng/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-dental-600 hover:bg-dental-700 p-3 rounded-full transition-colors"
@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Dra. Liz Cheng - Odontología Estética y Restauradora. Todos los derechos reservados.
+            © 2025 Dra. Liz Cheng - Odontología Estética y Restauradora. Todos los derechos reservados.
           </p>
         </div>
       </div>
