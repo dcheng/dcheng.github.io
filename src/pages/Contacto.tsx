@@ -93,8 +93,8 @@ const Contacto = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Teléfono</h3>
-                    <p className="text-gray-600">+123 456 7890</p>
-                    <p className="text-gray-600">+123 456 7891</p>
+                    <p className="text-gray-600">+51 987566993</p>
+                    <p className="text-gray-600">+51 987566993</p>
                   </div>
                 </div>
 
@@ -116,8 +116,7 @@ const Contacto = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Horarios de Atención</h3>
                     <div className="text-gray-600 space-y-1">
-                      <p>Lunes - Viernes: 8:00 AM - 6:00 PM</p>
-                      <p>Sábados: 8:00 AM - 2:00 PM</p>
+                      <p>Lunes - Sábados: 8:00 AM - 6:00 PM</p>
                       <p>Domingos: Cerrado</p>
                     </div>
                   </div>
