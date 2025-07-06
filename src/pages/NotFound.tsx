@@ -15,7 +15,7 @@ const NotFound = () => {
           <div className="text-center">
             <div className="mb-8">
               <img
-                src="/images/f4d3b1ea-e3bf-41a0-bb8f-3ec51a334713.png"
+                src="/images/f4d3b1ea-e3bf-41a0-bb8f-3ec51a334713.webp"
                 alt="Dra. Liz Cheng"
                 className="w-64 h-64 mx-auto rounded-full object-cover shadow-2xl opacity-50"
               />
