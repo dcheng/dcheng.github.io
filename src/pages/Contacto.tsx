@@ -1,43 +1,9 @@
 
-import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 const Contacto = () => {
-  const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    telefono: '',
-    servicio: '',
-    mensaje: ''
-  });
-  const { toast } = useToast();
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    toast({
-      title: "Mensaje enviado",
-      description: "Nos pondremos en contacto contigo pronto.",
-    });
-    setFormData({
-      nombre: '',
-      email: '',
-      telefono: '',
-      servicio: '',
-      mensaje: ''
-    });
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -45,40 +11,34 @@ const Contacto = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-dental-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-dental-600">Contacto</span>
+              <span className="text-dental-600">Contáctanos</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Estamos aquí para ayudarte. Agenda tu consulta o contáctanos para cualquier consulta
+              Estamos aquí para responder todas tus preguntas y ayudarte a conseguir la sonrisa de tus sueños
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Information */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
-            {/* Contact Information */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            {/* Contact Details */}
             <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Información de Contacto
-                </h2>
-                <p className="text-lg text-gray-600 mb-8">
-                  Ponte en contacto con nosotros para agendar tu cita o resolver cualquier duda
-                </p>
-              </div>
-
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+                Información de Contacto
+              </h2>
+              
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-dental-100 p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-dental-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Dirección</h3>
+                    <h3 className="font-semibold text-gray-900 mb-2">Dirección</h3>
                     <p className="text-gray-600">
                       C. Coronel Inclán 135<br />
                       Miraflores 15074<br />
@@ -92,7 +52,7 @@ const Contacto = () => {
                     <Phone className="h-6 w-6 text-dental-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Teléfono</h3>
+                    <h3 className="font-semibold text-gray-900 mb-2">Teléfono</h3>
                     <p className="text-gray-600">+51 987 566 993</p>
                   </div>
                 </div>
@@ -102,9 +62,8 @@ const Contacto = () => {
                     <Mail className="h-6 w-6 text-dental-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
+                    <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
                     <p className="text-gray-600">info@dralencheng.com</p>
-                    <p className="text-gray-600">citas@dralencheng.com</p>
                   </div>
                 </div>
 
@@ -113,151 +72,93 @@ const Contacto = () => {
                     <Clock className="h-6 w-6 text-dental-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Horarios de Atención</h3>
+                    <h3 className="font-semibold text-gray-900 mb-2">Horarios de Atención</h3>
                     <div className="text-gray-600 space-y-1">
                       <p>Lunes - Sábados: 8:00 AM - 6:00 PM</p>
                       <p>Domingos: Cerrado</p>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Emergency Contact */}
-              <div className="bg-dental-50 p-6 rounded-2xl">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Emergencias Dentales</h3>
-                <p className="text-gray-600 mb-3">
-                  Para emergencias fuera del horario de oficina, contáctanos al:
-                </p>
-                <p className="text-dental-600 font-semibold text-lg">+51 987 566 993</p>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-dental-100 p-3 rounded-full">
+                    <MessageCircle className="h-6 w-6 text-dental-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
+                    <p className="text-gray-600 mb-3">Para consultas rápidas y citas</p>
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=51987566993&text=Hola%21+Tengo+una+consulta%21&type=phone_number&app_absent=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors inline-flex items-center space-x-2"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      <span>Enviar Mensaje</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                Agenda tu Consulta
-              </h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-2">
-                    Nombre Completo *
-                  </label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    value={formData.nombre}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dental-500 focus:border-dental-500 transition-colors"
-                    placeholder="Tu nombre completo"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dental-500 focus:border-dental-500 transition-colors"
-                      placeholder="tu@email.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-2">
-                      Teléfono *
-                    </label>
-                    <input
-                      type="tel"
-                      id="telefono"
-                      name="telefono"
-                      value={formData.telefono}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dental-500 focus:border-dental-500 transition-colors"
-                      placeholder="Tu número de teléfono"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="servicio" className="block text-sm font-medium text-gray-700 mb-2">
-                    Servicio de Interés
-                  </label>
-                  <select
-                    id="servicio"
-                    name="servicio"
-                    value={formData.servicio}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dental-500 focus:border-dental-500 transition-colors"
-                  >
-                    <option value="">Selecciona un servicio</option>
-                    <option value="diseno-sonrisa">Diseño de Sonrisa</option>
-                    <option value="carillas">Carillas Dentales</option>
-                    <option value="blanqueamiento">Blanqueamiento Dental</option>
-                    <option value="implantes">Implantes Dentales</option>
-                    <option value="coronas-puentes">Coronas y Puentes</option>
-                    <option value="preventiva">Odontología Preventiva</option>
-                    <option value="consulta-general">Consulta General</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-2">
-                    Mensaje
-                  </label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    value={formData.mensaje}
-                    onChange={handleChange}
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dental-500 focus:border-dental-500 transition-colors"
-                    placeholder="Cuéntanos sobre tu consulta o qué te gustaría saber..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-dental-600 hover:bg-dental-700 text-white px-6 py-4 rounded-lg text-lg font-medium transition-colors flex items-center justify-center space-x-2"
-                >
-                  <Send className="h-5 w-5" />
-                  <span>Enviar Mensaje</span>
-                </button>
-              </form>
+            {/* Map */}
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8471728524087!2d-77.0282!3d-12.1265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7f6c2c123456%3A0x1234567890abcdef!2sC.%20Coronel%20Incl%C3%A1n%20135%2C%20Miraflores%2015074!5e0!3m2!1ses!2spe!4v1234567890123!5m2!1ses!2spe"
+                width="100%"
+                height="500"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación Dra. Liz Cheng"
+              ></iframe>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Map Section (Placeholder) */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Nuestra Ubicación
+      {/* Emergency Contact */}
+      <section className="py-20 bg-red-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              ¿Tienes una Emergencia Dental?
             </h2>
-            <p className="text-xl text-gray-600">
-              Encuentranos en el corazón de la ciudad
+            <p className="text-gray-600 mb-6">
+              Para emergencias dentales fuera del horario de atención, contáctanos por WhatsApp. 
+              Te responderemos lo antes posible.
             </p>
+            <a
+              href="https://api.whatsapp.com/send/?phone=51987566993&text=EMERGENCIA%20DENTAL%21%20Necesito%20ayuda%20urgente&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all hover:scale-105 inline-flex items-center space-x-2"
+            >
+              <Phone className="h-5 w-5" />
+              <span>Contactar por Emergencia</span>
+            </a>
           </div>
-          
-          <div className="bg-gray-300 h-96 rounded-2xl flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="h-12 w-12 text-gray-500 mx-auto mb-4" />
-              <p className="text-gray-600">Mapa interactivo</p>
-              <p className="text-sm text-gray-500">C. Coronel Inclán 135, Miraflores, Lima</p>
-            </div>
-          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-dental-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+            ¿Listo para Comenzar?
+          </h2>
+          <p className="text-xl text-dental-200 mb-8 max-w-2xl mx-auto">
+            Agenda tu consulta hoy mismo y da el primer paso hacia la sonrisa de tus sueños
+          </p>
+          <a
+            href="https://api.whatsapp.com/send/?phone=51987566993&text=Hola%21+Deseo+agendar+mi+cita%21&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-dental-600 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-medium transition-all hover:scale-105 inline-block"
+          >
+            Agendar Consulta
+          </a>
         </div>
       </section>
 
