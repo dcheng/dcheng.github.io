@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-dental-400 flex-shrink-0" />
-                <p className="text-gray-300 text-sm">+123 456 7890</p>
+                <p className="text-gray-300 text-sm">+51 987 566 993</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-dental-400 flex-shrink-0" />
@@ -48,8 +48,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-dental-400 flex-shrink-0" />
                 <div className="text-gray-300 text-sm">
-                  <p>Lunes - Viernes: 8:00 AM - 6:00 PM</p>
-                  <p>Sábados: 8:00 AM - 2:00 PM</p>
+                  <p>Lunes - Sábados: 8:00 AM - 6:00 PM</p>
                   <p>Domingos: Cerrado</p>
                 </div>
               </div>
