@@ -1,8 +1,12 @@
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Award, GraduationCap, Heart } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const QuienesSomos = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -12,10 +16,10 @@ const QuienesSomos = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Conoce a la <span className="text-dental-600">Dra. Liz Cheng</span>
+              {t('about.hero.title')} <span className="text-dental-600">{t('about.hero.titleHighlight')}</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Especialista en odontología estética y restauradora, dedicada a crear sonrisas hermosas y saludables
+              {t('about.hero.description')}
             </p>
           </div>
         </div>
@@ -26,17 +30,12 @@ const QuienesSomos = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">Mi Misión</h2>
+              <h2 className="text-3xl font-bold text-gray-900">{t('about.mission.title')}</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Mi compromiso es brindar atención dental de la más alta calidad, 
-                combinando experiencia clínica, tecnología avanzada y un enfoque personalizado 
-                para cada paciente. Creo firmemente que una sonrisa saludable y hermosa 
-                puede transformar la vida de las personas.
+                {t('about.mission.description1')}
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Con más de 15 años de experiencia en odontología estética y restauradora, 
-                me especializo en crear sonrisas naturalmente hermosas que reflejen 
-                la personalidad única de cada paciente.
+                {t('about.mission.description2')}
               </p>
             </div>
             <div className="relative">
@@ -55,10 +54,10 @@ const QuienesSomos = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Formación y Experiencia
+              {t('about.education.title')}
             </h2>
             <p className="text-xl text-gray-600">
-              Una sólida preparación académica respaldada por años de práctica clínica
+              {t('about.education.description')}
             </p>
           </div>
 
@@ -67,11 +66,9 @@ const QuienesSomos = () => {
               <div className="bg-dental-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <GraduationCap className="h-8 w-8 text-dental-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Educación</h3>
-              <p className="text-gray-600">
-                Doctora en Odontología<br />
-                Universidad Cayetano Heredia<br />
-                Especialización en Estética Dental
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">{t('about.education.title1')}</h3>
+              <p className="text-gray-600 whitespace-pre-line">
+                {t('about.education.desc1')}
               </p>
             </div>
 
@@ -79,11 +76,9 @@ const QuienesSomos = () => {
               <div className="bg-dental-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award className="h-8 w-8 text-dental-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Certificaciones</h3>
-              <p className="text-gray-600">
-                Certificada en Implantología<br />
-                Especialista en Diseño de Sonrisa<br />
-                Formación en Técnicas Avanzadas
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">{t('about.education.title2')}</h3>
+              <p className="text-gray-600 whitespace-pre-line">
+                {t('about.education.desc2')}
               </p>
             </div>
 
@@ -91,11 +86,9 @@ const QuienesSomos = () => {
               <div className="bg-dental-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Heart className="h-8 w-8 text-dental-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Filosofía</h3>
-              <p className="text-gray-600">
-                Atención personalizada<br />
-                Tratamientos mínimamente invasivos<br />
-                Resultados naturales y duraderos
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">{t('about.education.title3')}</h3>
+              <p className="text-gray-600 whitespace-pre-line">
+                {t('about.education.desc3')}
               </p>
             </div>
           </div>
@@ -107,25 +100,39 @@ const QuienesSomos = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Nuestros Valores
+              {t('about.values.title')}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { title: 'Calidad', description: 'Excelencia en cada tratamiento' },
-              { title: 'Confianza', description: 'Relaciones duraderas con nuestros pacientes' },
-              { title: 'Innovación', description: 'Tecnología y técnicas de vanguardia' },
-              { title: 'Calidez', description: 'Atención humana y personalizada' },
-            ].map((value, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-dental-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Heart className="h-10 w-10 text-dental-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+            <div className="text-center">
+              <div className="bg-dental-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="h-10 w-10 text-dental-600" />
               </div>
-            ))}
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('about.values.quality')}</h3>
+              <p className="text-gray-600">{t('about.values.qualityDesc')}</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-dental-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="h-10 w-10 text-dental-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('about.values.trust')}</h3>
+              <p className="text-gray-600">{t('about.values.trustDesc')}</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-dental-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="h-10 w-10 text-dental-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('about.values.innovation')}</h3>
+              <p className="text-gray-600">{t('about.values.innovationDesc')}</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-dental-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="h-10 w-10 text-dental-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('about.values.warmth')}</h3>
+              <p className="text-gray-600">{t('about.values.warmthDesc')}</p>
+            </div>
           </div>
         </div>
       </section>
