@@ -1,10 +1,13 @@
 
 import { Link } from 'react-router-dom';
 import { Smile, Award, Users, Clock } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -15,12 +18,11 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Sonrisas Naturalmente
-                <span className="text-dental-600 block">Hermosas</span>
+                {t('home.hero.title')}
+                <span className="text-dental-600 block">{t('home.hero.titleHighlight')}</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Especialista en odontología estética y restauradora. 
-                Transformamos tu sonrisa con la más alta calidad y tecnología avanzada.
+                {t('home.hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -29,13 +31,13 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="bg-dental-600 hover:bg-dental-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all hover:scale-105 text-center"
                 >
-                  Agendar Consulta
+                  {t('home.hero.scheduleBtn')}
                 </a>
                 <Link
                   to="/servicios"
                   className="border-2 border-dental-600 text-dental-600 hover:bg-dental-600 hover:text-white px-8 py-4 rounded-full text-lg font-medium transition-all text-center"
                 >
-                  Ver Servicios
+                  {t('home.hero.servicesBtn')}
                 </Link>
               </div>
             </div>
@@ -67,10 +69,10 @@ const Index = () => {
           <h2 className="sr-only">Estadísticas de la Clínica</h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Users, number: '500+', label: 'Pacientes Satisfechos' },
-              { icon: Award, number: '15+', label: 'Años de Experiencia' },
-              { icon: Smile, number: '1000+', label: 'Tratamientos Realizados' },
-              { icon: Clock, number: '24/7', label: 'Emergencias' },
+              { icon: Users, number: '500+', label: t('home.stats.patients') },
+              { icon: Award, number: '15+', label: t('home.stats.experience') },
+              { icon: Smile, number: '1000+', label: t('home.stats.treatments') },
+              { icon: Clock, number: '24/7', label: t('home.stats.emergency') },
             ].map((stat, index) => (
               <div key={index} className="text-center text-white">
                 <stat.icon className="h-8 w-8 mx-auto mb-4 text-dental-200" />
@@ -87,11 +89,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Resultados que Hablan por Sí Solos
+              {t('home.results.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Cada sonrisa es única y merece un tratamiento personalizado. 
-              Mira las transformaciones que hemos logrado.
+              {t('home.results.description')}
             </p>
           </div>
           
@@ -110,26 +111,26 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Nuestros Servicios
+              {t('home.services.title')}
             </h2>
             <p className="text-xl text-gray-600">
-              Ofrecemos una amplia gama de tratamientos dentales especializados
+              {t('home.services.description')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { 
-                title: 'Odontología Estética', 
-                description: 'Diseño de sonrisa, carillas, blanqueamiento dental' 
+                title: t('home.services.aesthetic'), 
+                description: t('home.services.aestheticDesc')
               },
               { 
-                title: 'Odontología Restauradora', 
-                description: 'Coronas, puentes, implantes dentales' 
+                title: t('home.services.restorative'), 
+                description: t('home.services.restorativeDesc')
               },
               { 
-                title: 'Tratamientos Preventivos', 
-                description: 'Limpiezas, sellantes, fluorización' 
+                title: t('home.services.preventive'), 
+                description: t('home.services.preventiveDesc')
               },
             ].map((service, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
@@ -142,7 +143,7 @@ const Index = () => {
                   to="/servicios" 
                   className="text-dental-600 hover:text-dental-700 font-medium inline-flex items-center"
                 >
-                  Saber más →
+                  {t('home.services.learnMore')}
                 </Link>
               </div>
             ))}

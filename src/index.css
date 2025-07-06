@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -53,6 +54,13 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Dental colors */
+    --dental-50: 210 40% 98%;
+    --dental-100: 210 40% 96%;
+    --dental-200: 210 40% 90%;
+    --dental-600: 195 100% 39%;
+    --dental-700: 195 100% 35%;
   }
 
   .dark {
@@ -103,3 +111,27 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom dental color classes */
+.bg-dental-50 { background-color: hsl(var(--dental-50)); }
+.bg-dental-100 { background-color: hsl(var(--dental-100)); }
+.bg-dental-200 { background-color: hsl(var(--dental-200)); }
+.bg-dental-600 { background-color: hsl(var(--dental-600)); }
+.bg-dental-700 { background-color: hsl(var(--dental-700)); }
+
+.text-dental-50 { color: hsl(var(--dental-50)); }
+.text-dental-100 { color: hsl(var(--dental-100)); }
+.text-dental-200 { color: hsl(var(--dental-200)); }
+.text-dental-600 { color: hsl(var(--dental-600)); }
+.text-dental-700 { color: hsl(var(--dental-700)); }
+
+.border-dental-50 { border-color: hsl(var(--dental-50)); }
+.border-dental-100 { border-color: hsl(var(--dental-100)); }
+.border-dental-200 { border-color: hsl(var(--dental-200)); }
+.border-dental-600 { border-color: hsl(var(--dental-600)); }
+.border-dental-700 { border-color: hsl(var(--dental-700)); }
+
+.hover\:bg-dental-600:hover { background-color: hsl(var(--dental-600)); }
+.hover\:bg-dental-700:hover { background-color: hsl(var(--dental-700)); }
+.hover\:text-dental-600:hover { color: hsl(var(--dental-600)); }
+.hover\:text-dental-700:hover { color: hsl(var(--dental-700)); }
