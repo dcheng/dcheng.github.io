@@ -37,6 +37,15 @@ jobs:
       env:
         NODE_ENV: production
 
+    - name: List build output
+      run: |
+        echo "Listing dist directory:"
+        ls -la dist/
+        echo "Listing assets directory:"
+        ls -la dist/assets/
+        echo "Contents of index.html:"
+        head -20 dist/index.html
+
     - name: Setup Pages
       uses: actions/configure-pages@v4
       
