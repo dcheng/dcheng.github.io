@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Facebook, Instagram } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,6 +45,27 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            
+            {/* Social Media Links */}
+            <div className="flex items-center space-x-3">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-dental-600 transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-dental-600 transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </div>
+            
             <Link
               to="/contacto"
               className="bg-dental-600 hover:bg-dental-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
@@ -82,6 +103,27 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Mobile Social Media Links */}
+              <div className="flex items-center justify-center space-x-6 py-4">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-dental-600 transition-colors"
+                >
+                  <Facebook className="h-6 w-6" />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-dental-600 transition-colors"
+                >
+                  <Instagram className="h-6 w-6" />
+                </a>
+              </div>
+              
               <Link
                 to="/contacto"
                 className="block w-full text-center bg-dental-600 hover:bg-dental-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors mt-4"

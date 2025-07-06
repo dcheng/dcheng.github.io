@@ -1,11 +1,11 @@
 
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo y descripción */}
           <div className="space-y-4">
             <img 
@@ -54,6 +54,32 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Redes Sociales */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-dental-400">Síguenos</h3>
+            <div className="flex space-x-4">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-dental-600 hover:bg-dental-700 p-3 rounded-full transition-colors"
+              >
+                <Facebook className="h-5 w-5 text-white" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-dental-600 hover:bg-dental-700 p-3 rounded-full transition-colors"
+              >
+                <Instagram className="h-5 w-5 text-white" />
+              </a>
+            </div>
+            <p className="text-gray-300 text-sm">
+              Mantente conectado para tips de salud dental y noticias.
+            </p>
           </div>
         </div>
 
