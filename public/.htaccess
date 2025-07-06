@@ -16,3 +16,16 @@
   AddOutputFilterByType DEFLATE application/javascript
   AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
+
+# Handle Angular and React Router
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Handle requests for static files (images, css, js, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # For all other requests, serve index.html
+  RewriteRule ^ /index.html [L]
+</IfModule>
