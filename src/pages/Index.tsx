@@ -64,6 +64,7 @@ const Index = () => {
       {/* Statistics Section */}
       <section className="py-16 bg-dental-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="sr-only">Estadísticas de la Clínica</h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: Users, number: '500+', label: 'Pacientes Satisfechos' },
