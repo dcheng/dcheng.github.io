@@ -41,7 +41,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="/lovable-uploads/f4d3b1ea-e3bf-41a0-bb8f-3ec51a334713.png"
+                src="/images/f4d3b1ea-e3bf-41a0-bb8f-3ec51a334713.png"
                 alt="Dra. Liz Cheng"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
@@ -96,7 +96,7 @@ const Index = () => {
           
           <div className="relative">
             <img
-              src="/lovable-uploads/08e1aa26-b1cc-4bed-a6fd-4b73c12f3183.png"
+              src="/images/08e1aa26-b1cc-4bed-a6fd-4b73c12f3183.png"
               alt="Sonrisas naturalmente hermosas - Antes y después"
               className="w-full rounded-2xl shadow-2xl"
             />

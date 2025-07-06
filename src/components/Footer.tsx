@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo y descripción */}
           <div className="space-y-4">
             <img 
-              src="/lovable-uploads/7763065a-89ed-4786-a8c7-998e28bbf032.png" 
+              src="/images/7763065a-89ed-4786-a8c7-998e28bbf032.png" 
               alt="Dra. Liz Cheng" 
               className="h-24 w-auto bg-white p-2 rounded-lg"
             />
