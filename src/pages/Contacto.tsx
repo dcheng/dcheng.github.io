@@ -80,9 +80,9 @@ const Contacto = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Dirección</h3>
                     <p className="text-gray-600">
-                      Av. Principal 123<br />
-                      Consultorios Médicos, Piso 3<br />
-                      Ciudad, País 12345
+                      C. Coronel Inclán 135<br />
+                      Miraflores 15074<br />
+                      Lima, Perú
                     </p>
                   </div>
                 </div>
@@ -93,8 +93,7 @@ const Contacto = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Teléfono</h3>
-                    <p className="text-gray-600">+51 987566993</p>
-                    <p className="text-gray-600">+51 987566993</p>
+                    <p className="text-gray-600">+51 987 566 993</p>
                   </div>
                 </div>
 
@@ -129,7 +128,7 @@ const Contacto = () => {
                 <p className="text-gray-600 mb-3">
                   Para emergencias fuera del horario de oficina, contáctanos al:
                 </p>
-                <p className="text-dental-600 font-semibold text-lg">+123 456 7892</p>
+                <p className="text-dental-600 font-semibold text-lg">+51 987 566 993</p>
               </div>
             </div>
 
