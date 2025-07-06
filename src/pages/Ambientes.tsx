@@ -26,8 +26,8 @@ const Ambientes = () => {
     {
       id: 4,
       src: "/images/aa9d76ff-8848-4755-86de-03cea8769a8f.webp",
-      alt: "Ambiente relajante",
-      title: "Ambiente Relajante"
+      alt: "Área de Esterilización",
+      title: "Área de Esterilización"
     }
   ];
 
@@ -64,8 +64,6 @@ const Ambientes = () => {
                   <div className="absolute bottom-6 left-6 text-white">
                     <h3 className="text-xl font-semibold mb-2">{image.title}</h3>
                     <div className="flex items-center space-x-2">
-                      <Camera className="h-4 w-4" />
-                      <span className="text-sm">Ver detalles</span>
                     </div>
                   </div>
                 </div>
