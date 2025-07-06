@@ -1,3 +1,4 @@
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/3c9c29ef-f297-42a5-970c-fcd3f1559c2a
@@ -60,7 +61,7 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/3c9c29ef-f297-42a5-970c-fcd3f1559c2a) and click on Share -> Publish.
+Simply open [Lovable](https://lovable.dev/projects/3c9c29ef-f297-42a5-970c-fcd3f1559c2a) and click on Share → Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
@@ -69,3 +70,5 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+<!-- Build trigger for GitHub Actions deployment -->
