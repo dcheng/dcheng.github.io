@@ -13,13 +13,13 @@ const Ambientes = () => {
     },
     {
       id: 2,
-      src: "/images/3005747e-a44c-4f9f-9e9d-9f87993a51c0.webp",
+      src: "/images/5269011c-4957-4664-a85b-82eb3b55cfb7.webp",
       alt: "Sala de espera cómoda",
       title: "Sala de Espera"
     },
     {
       id: 3,
-      src: "/images/5269011c-4957-4664-a85b-82eb3b55cfb7.webp",
+      src: "/images/3005747e-a44c-4f9f-9e9d-9f87993a51c0.webp",
       alt: "Equipamiento dental avanzado",
       title: "Tecnología Avanzada"
     },
