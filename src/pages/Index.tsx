@@ -23,12 +23,14 @@ const Index = () => {
                 Transformamos tu sonrisa con la más alta calidad y tecnología avanzada.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/contacto"
+                <a
+                  href="https://api.whatsapp.com/send/?phone=51987566993&text=Hola%21+Deseo+agendar+mi+cita%21&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-dental-600 hover:bg-dental-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all hover:scale-105 text-center"
                 >
                   Agendar Consulta
-                </Link>
+                </a>
                 <Link
                   to="/servicios"
                   className="border-2 border-dental-600 text-dental-600 hover:bg-dental-600 hover:text-white px-8 py-4 rounded-full text-lg font-medium transition-all text-center"
