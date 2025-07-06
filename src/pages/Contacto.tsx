@@ -257,7 +257,7 @@ const Contacto = () => {
             <div className="text-center">
               <MapPin className="h-12 w-12 text-gray-500 mx-auto mb-4" />
               <p className="text-gray-600">Mapa interactivo</p>
-              <p className="text-sm text-gray-500">Av. Principal 123, Ciudad</p>
+              <p className="text-sm text-gray-500">C. Coronel Inclán 135, Miraflores, Lima</p>
             </div>
           </div>
         </div>
