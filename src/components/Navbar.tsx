@@ -66,12 +66,14 @@ const Navbar = () => {
               </a>
             </div>
             
-            <Link
-              to="/contacto"
+            <a
+              href="https://api.whatsapp.com/send/?phone=51987566993&text=Hola%21+Deseo+agendar+mi+cita%21&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-dental-600 hover:bg-dental-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
             >
               Agendar Cita
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -107,7 +109,7 @@ const Navbar = () => {
               {/* Mobile Social Media Links */}
               <div className="flex items-center justify-center space-x-6 py-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/dra.lizcheng"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-dental-600 transition-colors"
@@ -115,7 +117,7 @@ const Navbar = () => {
                   <Facebook className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/dra.lizcheng/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-dental-600 transition-colors"
@@ -124,13 +126,15 @@ const Navbar = () => {
                 </a>
               </div>
               
-              <Link
-                to="/contacto"
+              <a
+                href="https://api.whatsapp.com/send/?phone=51987566993&text=Hola%21+Deseo+agendar+mi+cita%21&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-center bg-dental-600 hover:bg-dental-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors mt-4"
                 onClick={() => setIsOpen(false)}
               >
                 Agendar Cita
-              </Link>
+              </a>
             </div>
           </div>
         )}
