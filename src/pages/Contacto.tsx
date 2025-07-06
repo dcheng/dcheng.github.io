@@ -74,7 +74,7 @@ const Contacto = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Horarios de Atención</h3>
                     <div className="text-gray-600 space-y-1">
-                      <p>Lunes - Viernes: 9:00 AM - 7:00 PM</p>
+                      <p>Lunes - Viernes: 9:00 AM - 7:00 PM (previa cita)</p>
                       <p>Sábados y Domingos: Cerrado</p>
                     </div>
                   </div>
