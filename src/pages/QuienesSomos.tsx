@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Award, GraduationCap, Heart } from 'lucide-react';
@@ -42,7 +41,7 @@ const QuienesSomos = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/f4d3b1ea-e3bf-41a0-bb8f-3ec51a334713.png"
+                src="/images/f4d3b1ea-e3bf-41a0-bb8f-3ec51a334713.webp"
                 alt="Dra. Liz Cheng"
                 className="rounded-2xl shadow-2xl w-full"
               />

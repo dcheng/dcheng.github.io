@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Smile, Shield, Zap, Heart, Award, Users } from 'lucide-react';
@@ -132,7 +131,7 @@ const Servicios = () => {
             </div>
             <div className="grid grid-cols-1 gap-6">
               <img
-                src="/images/75ec2dbc-f474-4594-8996-d17f53f467fe.png"
+                src="/images/75ec2dbc-f474-4594-8996-d17f53f467fe.webp"
                 alt="Tecnología dental avanzada"
                 className="rounded-2xl shadow-lg"
               />
