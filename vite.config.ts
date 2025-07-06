@@ -29,7 +29,7 @@ const copyLovableUploadsPlugin = () => {
           }
         });
       } catch (error) {
-        console.warn('Could not copy lovable-uploads to images:', error.message);
+        console.warn('Could not copy lovable-uploads to images:', error instanceof Error ? error.message : String(error));
       }
     }
   };
